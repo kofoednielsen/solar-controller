@@ -3,7 +3,7 @@ services:
   solar-controller:
     build:
       context: .
-    # command: 'python3 daily.py'
+    command: 'python3 daily.py'
     volumes: 
       - './config.yaml:/config.yaml'
     environment:
