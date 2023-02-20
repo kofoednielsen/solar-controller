@@ -3,6 +3,7 @@ services:
   solar-optimizer:
     build:
       context: .
+    # command: 'python3 daily.py'
     volumes: 
       - './config.yaml:/config.yaml'
     environment:
