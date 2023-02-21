@@ -58,7 +58,7 @@ cloud_thresholds:
       4: 48
       5: 48
       6: 48
-  70: From 70% and above average cloud coverage
+  70: # from 70% and above average cloud coverage
     time_of_use_voltages:
       1: 56
       2: 56
