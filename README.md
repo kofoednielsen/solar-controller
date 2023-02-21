@@ -44,26 +44,26 @@ solar_assistant:
 # In this example there are only 2. 
 #
 # If the average cloud coverage today is let's say `38%` then the `0:` threshold table is selected.
-# However if the cloud coverage average is `50` or higher, then the `50:` table is selected.
+# However if the cloud coverage average is `70%` or higher, then the `70:` table is selected.
 #
-# In this example config, if it's a cloudy day (more than 50% cloud coverage), the battery will charge at night when electricity is
+# In this example config, if it's a cloudy day (more than 70% cloud coverage), the battery will charge at night when electricity is
 # cheap and save the charge until slot 5 (from 17:00) at this time electricity is the most expense.
 # However if it's a sunny day it will not charge the battery so it's ready to be solar charged throughout the day
 cloud_thresholds:
-  0: 
-    time_of_use_voltages:
-      1: 56
-      2: 56
-      3: 56
-      4: 56
-      5: 48
-      6: 48
-  50:
+  0: # From 0% average cloud coverage
     time_of_use_voltages:
       1: 48
       2: 48 
       3: 48
       4: 48
+      5: 48
+      6: 48
+  70: From 70% and above average cloud coverage
+    time_of_use_voltages:
+      1: 56
+      2: 56
+      3: 56
+      4: 56
       5: 48
       6: 48
 ```

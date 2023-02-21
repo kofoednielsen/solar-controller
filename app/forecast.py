@@ -35,7 +35,7 @@ def calculate_todays_cloud_average():
             cloud_area_fractions.append(float(details["cloud_area_fraction"]))
 
     if not cloud_area_fractions:
-        return 0
+        return 100
 
     cloud_area_fraction_average = sum(cloud_area_fractions) / len(cloud_area_fractions)
     return cloud_area_fraction_average
