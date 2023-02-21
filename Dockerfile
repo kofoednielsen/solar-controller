@@ -1,5 +1,7 @@
-from python:3.11
+from python:3.11-slim-buster
 ARG TARGETARCH
+
+RUN apt update && apt install -y curl
 
 ENV SUPERCRONIC_URL=https://github.com/aptible/supercronic/releases/download/v0.2.1/supercronic-linux-$TARGETARCH \
     SUPERCRONIC=supercronic-linux-$TARGETARCH
