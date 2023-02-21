@@ -9,17 +9,17 @@ solar_assistant:
 cloud_thresholds:
   0: 
     time_of_use_voltages:
-      1: 56
-      2: 56
-      3: 56
-      4: 56
-      5: 48
-      6: 48
-  50:
-    time_of_use_voltages:
       1: 48
       2: 48 
       3: 48
       4: 48
+      5: 48
+      6: 48
+  70: 
+    time_of_use_voltages:
+      1: 56
+      2: 56
+      3: 56
+      4: 56
       5: 48
       6: 48
