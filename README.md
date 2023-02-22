@@ -71,6 +71,8 @@ cloud_thresholds:
 
 ## How to deploy
 
+In solar-assistant go to `Settings > MQTT Broker > Advanced` and make sure to enable `Allow Settings Change`. After that make sure to enable the `MQTT Broker`.
+
 ### Docker on a seperate host
 
 If you have a linux server with docker installed, you can simply create a `solar-controller-config.yaml` adjusted for your needs (see the config chapter above).
