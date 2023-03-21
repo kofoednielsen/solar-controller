@@ -1,0 +1,9 @@
+version: '3.7'
+services:
+  solar-optimizer:
+    build:
+      context: .
+    volumes: 
+      - './config.yaml:/config.yaml'
+    environment:
+      PYTHONUNBUFFERED: true

@@ -1,0 +1,25 @@
+forecast: 
+  lat: 60
+  lon: 10
+solar_assistant:
+  ip: '127.0.0.1'
+  mqtt:
+    username: 'admin' # not implemented
+    password: 'admin' # not implemented
+cloud_thresholds:
+  0: 
+    time_of_use_voltages:
+      1: 56
+      2: 56
+      3: 56
+      4: 56
+      5: 48
+      6: 48
+  50:
+    time_of_use_voltages:
+      1: 48
+      2: 48 
+      3: 48
+      4: 48
+      5: 48
+      6: 48
