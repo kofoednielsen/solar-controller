@@ -90,7 +90,7 @@ services:
 Save the file and then just run 
 
 ```
-docker-compose up -d
+docker compose up -d
 ```
 
 ### On the same raspberry pi as solar-assistant.io is running
