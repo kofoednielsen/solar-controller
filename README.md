@@ -73,7 +73,7 @@ cloud_thresholds:
 
 ### Docker on a seperate host
 
-If you have a linux server with docker installed, you can simply crete a `solar-controller-config.yaml` adjusted for your needs the config chapter above.
+If you have a linux server with docker installed, you can simply crete a `solar-controller-config.yaml` adjusted for your needs (see the config chapter above).
 
 Then crate a deployment `docker-compose.yaml` file with the following contents:
 
