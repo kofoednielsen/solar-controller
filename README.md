@@ -81,7 +81,7 @@ Then crate a deployment `docker-compose.yaml` file with the following contents:
 version: '3.7'    
 services:    
   solar-controller:
-    image: kofoednielsen/solar-controller:0.1
+    image: kofoednielsen/solar-controller:0.0
     volumes:
      - './solar-controller-config.yaml:/config.yaml'
     restart: always
