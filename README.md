@@ -16,3 +16,8 @@ The application runs after midnight and decides, based on the weather forecast o
 
 ## How to Use
   Coming later..
+
+
+## TODO
+
+* Factor in electricity prices in the decision
