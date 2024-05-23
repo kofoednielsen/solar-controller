@@ -1,0 +1,7 @@
+name: Always fail
+on: [push]
+jobs:
+  always-fail:
+    runs-on: ubuntu-latest
+    steps:
+      - run: false
