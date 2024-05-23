@@ -1,7 +1,15 @@
-name: Always fail
-on: [push]
+name: Mirror to readonly
+on:
+  push:
+    branches:
+      - main
 jobs:
-  always-fail:
+  mirror:
     runs-on: ubuntu-latest
     steps:
-      - run: false
+      - uses: actions/checkout@v3
+      - name: Push to readonly branch
+        run: |
+          git config --global user.name 'Mirror action'
+          git config --global user.email 'your-username@users.noreply.github.com'
+          git push origin main:readonly
