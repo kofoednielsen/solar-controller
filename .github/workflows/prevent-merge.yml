@@ -6,4 +6,4 @@ jobs:
     name: Prevent Merging
     runs-on: ubuntu-latest
     steps:
-      run: "false"
+      - run: "false"
