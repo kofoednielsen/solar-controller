@@ -14,4 +14,4 @@ jobs:
         run: |
           git config --global user.name 'Mirror action'
           git config --global user.email 'your-username@users.noreply.github.com'
-          git push origin main:readonly
+          git push origin HEAD:readonly
