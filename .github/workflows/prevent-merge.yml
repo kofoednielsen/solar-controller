@@ -1,0 +1,9 @@
+on:
+  pull_request:
+
+jobs:
+  prevent-merge:
+    name: Prevent Merging
+    runs-on: ubuntu-latest
+    steps:
+      - false
